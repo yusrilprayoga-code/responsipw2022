@@ -234,7 +234,7 @@ if (empty($_SESSION['admin_nama'])) {
                                                 $jumlahHalaman = ceil($jumlahData / $jumlahDataPerhalaman);
                                                 $halamanAktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1;
                                                 $awalData = ($jumlahDataPerhalaman * $halamanAktif) - $jumlahDataPerhalaman;
-                                                $data = mysqli_query($konek, "select * from vehicle LIMIT $awalData, $jumlahDataPerhalaman");
+                                                $data = mysqli_query($konek, "select * from vehicle ORDER BY VIN LIMIT $awalData, $jumlahDataPerhalaman");
                                             }
                                             $no = 1;
                                             while ($d = mysqli_fetch_array($data)) { ?>
