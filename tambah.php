@@ -69,25 +69,15 @@ if(isset($_POST['submit'])){
             </div>
             <div class="mb-3">
                 <label for="tipe" class="form-label">Vehicle Type</label>
-                <select class="form-select" aria-label="Default select example" name="tipe">
-                    <option selected>Open this select menu</option>
-                    <option value="1">Nissan</option>
-                    <option value="2">Toyota</option>
-                    <option value="3">Honda</option>
-                </select>
+                <input type="text" class="form-control" placeholder="Vehicle Type" name="tipe">
             </div>
             <div class="mb-3">
-                <label for="series" class="form-label">Series</label>
-                <select class="form-select" aria-label="Default select example" name="series">
-                    <option selected>Open this select menu</option>
-                    <option value="1">V8</option>
-                    <option value="2">V12</option>
-                    <option value="3">V15</option>
-                </select>
+                 <label for="series" class="form-label">Series</label>
+                <input type="text" class="form-control" placeholder="Vehicle Series" name="series">
             </div>
             <div class="mb-3">
                 <label for="wiper" class="form-label">Wiper Width</label>
-                <input type="text" class="form-control" aria-describedby="emailHelp" name="wiper">
+                <input type="number" class="form-control" name="wiper">
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn-link me-md-2" type="reset" style="color: red; text-decoration:none;">Cancel</button>

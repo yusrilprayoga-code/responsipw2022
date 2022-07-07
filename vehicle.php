@@ -227,7 +227,7 @@ if (empty($_SESSION['admin_nama'])) {
                                             <?php
                                             if (isset($_GET['cari'])) {
                                                 $cari = $_GET['cari'];
-                                                $data = mysqli_query($konek, "select * from vehicle where vehicle_name like '%" . $cari . "%'");
+                                                $data = mysqli_query($konek, "select * from vehicle where vehicle_name like '%" . $cari . "%' order by VIN DESC");
                                             } else {
                                                 $jumlahDataPerhalaman = 5;
                                                 $jumlahData = count(query("SELECT * FROM vehicle"));
